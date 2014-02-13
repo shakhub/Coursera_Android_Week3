@@ -50,11 +50,16 @@ public class ExplicitlyLoadedActivity extends Activity {
 		String userInput = mEditText.getText().toString();
 
 		// TODO - Create a new intent and save the input from the EditText field as an extra
-		Intent intent = new Intent(ExplicitlyLoadedActivity.this,ActivityLoaderActivity.class);
-		intent.putExtra(userInput, RESULT_OK);
+		//Intent intent = new Intent(ExplicitlyLoadedActivity.this,ActivityLoaderActivity.class);
+		Intent intent = new Intent();
+		intent.putExtra("textData",userInput);
 		// TODO - Set Activity's result with result code RESULT_OK
+<<<<<<< HEAD
 		setResult(RESULT_OK,intent);
+=======
+		this.setResult(RESULT_OK,intent);
+>>>>>>> f4eb1620949bca125ebad8d067f67a82d9ab6763
 		// TODO - Finish the Activity
-		finish();
+		this.finish();
 	}
 }

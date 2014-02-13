@@ -86,8 +86,7 @@ public class ActivityLoaderActivity extends Activity {
 		// will carry out the baseIntent. Store the Intent in the 
 		// chooserIntent variable below. HINT: using the Intent class' 
 		// createChooser())
-		Intent chooser = Intent.createChooser(baseIntent, CHOOSER_TEXT);
-		Intent chooserIntent = chooser;
+		Intent chooserIntent = Intent.createChooser(baseIntent, CHOOSER_TEXT);
 
 		Log.i(TAG,"Chooser Intent Action:" + chooserIntent.getAction());
 		// TODO - Start the chooser Activity, using the chooser intent
@@ -105,8 +104,12 @@ public class ActivityLoaderActivity extends Activity {
 		// If so, update the Textview showing the user-entered text.
 		if(requestCode == GET_TEXT_REQUEST_CODE){
 			if(resultCode == RESULT_OK){
+<<<<<<< HEAD
 				mUserTextView.setText(data.getStringExtra("RESULT_OK"));
 				
+=======
+				mUserTextView.setText(data.getStringExtra("textData"));
+>>>>>>> f4eb1620949bca125ebad8d067f67a82d9ab6763
 			}
 		}
 
