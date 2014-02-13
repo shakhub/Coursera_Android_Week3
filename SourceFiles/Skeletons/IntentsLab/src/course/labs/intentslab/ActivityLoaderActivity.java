@@ -105,7 +105,7 @@ public class ActivityLoaderActivity extends Activity {
 		// If so, update the Textview showing the user-entered text.
 		if(requestCode == GET_TEXT_REQUEST_CODE){
 			if(resultCode == RESULT_OK){
-				//data.getStringExtra();
+				mUserTextView.setText(data.getStringExtra("RESULT_OK"));
 				
 			}
 		}
